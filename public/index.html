@@ -69,7 +69,7 @@
         }
 
         if (stompClient && stompClient.connected) {
-            stompClient.send('/pub/partyroom/api/v1/send/message', {}, message);
+            stompClient.send('/pub/partyroom/api/v1/send/chat', {}, message);
         } else {
             alert('You are not connected to the WebSocket server');
         }
